@@ -7,6 +7,10 @@
   --ivory: #F9F5E8;
   --charcoal: #333333;
   
+  /* font families */
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Playfair Display', serif;
+
   /* Spacing */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
@@ -34,8 +38,8 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-  line-height: 1.2;
+  font-family: var(--secondary-font);
+  color: var(--olive);
 }
 
 img {
@@ -241,6 +245,16 @@ img {
 .secondary-button:hover {
   background-color: rgba(255, 255, 255, 0.1);
   transform: translateY(-3px);
+}
+
+/* Motivational Banner */
+.motivational-banner {
+  background: var(--olive);
+  color: white;
+  padding: 1.5 rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
 /* Section Titles */
@@ -630,6 +644,17 @@ blockquote::before {
   font-size: 3rem;
   color: rgba(107, 142, 35, 0.2);
   font-family: serif;
+}
+
+.partner-logos{
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  padding: 1rem 0;
+
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-lg);
+
 }
 
 /* Resources */
